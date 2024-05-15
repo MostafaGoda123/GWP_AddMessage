@@ -1,0 +1,82 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   }
+html {
+   font-size: 62.5%;
+   font-family: sans-serif;   }
+@media (max-width : 768px) {
+   html {
+      font-size: 43.75%;
+   }   }
+/*---------------------*/
+.msg {
+   width: 100%;
+   min-height: 100vh;
+   background-color: rebeccapurple ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10vh 10%;   }
+.msg form {
+   width: 50rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem ;
+   padding: 2rem ;
+   border: 2px solid rgb(200, 0, 255) ;
+   border-radius: 2rem ;   }
+.msg form input {
+   width: 100% ;
+   height: 5rem ;
+   border: 0;
+   outline: 0;
+   padding: 0 1rem ;
+   font-size: 2rem ;
+   border-radius: 1rem ;   }
+.msg form input:focus {
+   border: 1px solid rgb(200, 0, 255) ;   }
+.msg form button {
+   font-size: 2rem;
+   padding: 1.5rem ;
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   background-color: rgb(68, 0, 87) ;
+   color: white;
+   transition: 0.4s;
+   border-radius: 1rem ;
+   box-shadow: 0 0 1rem rgb(68, 0, 87);   }
+.msg form button:hover {
+   box-shadow: 0.5rem 0.5rem  1rem rgb(68, 0, 87);   }
+.msg form .allParagraphs {
+   display: grid;
+   grid-template-columns: repeat(auto-fill , minmax(100px , 1fr));
+   gap: 3rem;   }
+.msg form .allParagraphs p {
+   overflow-y : scroll ;
+   overflow-x : hidden ;
+   overflow-wrap: break-word ;
+   position: relative;
+   background-color: white;
+   padding: 1rem ;
+   font-size: 1.8rem ;
+   height: 10rem ;
+   border-radius: 1rem ;
+   box-shadow: 0.4rem 0.4rem 0.8rem rgba(51, 51, 51, 0.5) ;   }
+.msg form .allParagraphs span:hover {
+   box-shadow: 0 0 1rem red;   }
+.msg form .allParagraphs span {
+   transition: 0.4s;
+   z-index: 10;
+   position: absolute;
+   left: -1rem ;
+   top: -1rem ;
+   width: 3rem ;
+   line-height: 3rem ;
+   text-align: center;
+   background-color: red;
+   color: white;
+   border-radius: 50%; 
+   cursor: pointer;  }
+/*---------------------*/
